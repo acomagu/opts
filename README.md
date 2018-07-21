@@ -1,5 +1,7 @@
 # opts
 
+[![CircleCI](https://img.shields.io/circleci/project/github/RedSparr0w/node-csgo-parser.svg?style=for-the-badge)](https://circleci.com/gh/acomagu/opts)
+
 The Go Functional Options Generator.
 
 ## Example
