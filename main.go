@@ -30,7 +30,7 @@ var (
 	opt    = flag.String("name", "", "option name; if omitted, used type name")
 	output = flag.String("output", "opts.go", "output file name; default srcdir/opts.go")
 	apnd   = flag.Bool("append", false, "append to the output file.")
-	imp = &importValue{}
+	imp    = &importValue{}
 )
 
 func usage() {
