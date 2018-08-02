@@ -2,6 +2,7 @@ package main
 
 import (
 	"io/ioutil"
+	"os"
 	"strings"
 	"testing"
 
@@ -449,6 +450,7 @@ func (o *fileOpt) set(p interface{}) {
 			if err != nil {
 				t.Fatal(errors.Wrap(err, "could not create temp file"))
 			}
+			defer os.Remove(f.Name())
 
 			if _, err := f.WriteString(test.before); err != nil {
 				t.Fatal(errors.Wrap(err, "could not write to temp file"))
